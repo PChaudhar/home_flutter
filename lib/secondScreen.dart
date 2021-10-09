@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:home_flutter/Homenavigation.dart';
 import 'dart:async';
 import 'package:home_flutter/home.dart';
+import 'Secondnavigation.dart';
 
 class ScreenTwo extends StatefulWidget {
   final String mydata;
@@ -46,17 +47,17 @@ class _ScreenTwoState extends State<ScreenTwo> {
 //      );
     return Scaffold(
       appBar: AppBar(
-        title: Text("Collection"),
+        title: Text("Dashboard"),
       ),
       drawer: Drawer(
         child: ListView(
           children: [
             UserAccountsDrawerHeader(
-                accountName: Text("Priya"),
-                accountEmail: Text("Priya@gmail.com"),
+                accountName: Text("Priya Chaudhary"),
+                accountEmail: Text("Priya.chaudhary.it@gmail.com"),
                 currentAccountPicture: CircleAvatar(
                     backgroundColor: Colors.white,
-                    child: Text("P", style: TextStyle(fontSize: 50.0)
+                    child: Text("PC", style: TextStyle(fontSize: 50.0)
                     )
                 )
             ),
@@ -71,7 +72,12 @@ class _ScreenTwoState extends State<ScreenTwo> {
             ),
             ListTile(
               title: Text("Notification Page", style: TextStyle(color: Colors.indigo),),
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => Secondnavigation()));
+              },
             ),
+
           ],
         ),
       ),//this will just add the Navigation Drawer Icon

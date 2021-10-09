@@ -5,7 +5,7 @@ import 'package:home_flutter/main.dart';
 import 'package:home_flutter/home.dart';
 import 'package:home_flutter/secondScreen.dart';
 import 'package:flutter/widgets.dart';
-import 'package:image_picker/image_picker.dart';
+// import 'package:image_picker/image_picker.dart';
 // import 'package:image_cropper/image_cropper.dart';
 
 
@@ -26,19 +26,19 @@ class _HomenavigationState extends State<Homenavigation> {
  Widget build(BuildContext context) {
    return Scaffold(
      appBar: AppBar(
-       title: Text("Image Picker"),
+       title: Text("Home Page"),
        centerTitle: true,
        backgroundColor: Colors.blueAccent,
      ),
      body: Center(
-       child: Image(
-         image: NetworkImage('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F677439968930881544%2F&psig=AOvVaw0HgYYmTNDwGKjnTQlguNhc&ust=1618411812477000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOCzwvu7--8CFQAAAAAdAAAAABAI'),
-       )
+       // child: Image(
+       //   image: NetworkImage('https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Fflowers%2F&psig=AOvVaw0Rl5UCdv25e-dbCV7nseVe&ust=1633841332248000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCJiFlbXDvPMCFQAAAAAdAAAAABAD'),
+       // )
        ),
      floatingActionButton: FloatingActionButton(
        onPressed: (
            ) {},
-       child: Text('Click Me'),
+       child: Text('Plus'),
 
        backgroundColor: Colors.blueAccent,
      ),
